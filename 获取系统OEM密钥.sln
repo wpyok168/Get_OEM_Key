@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "获取系统OEM密钥", "获取系统OEM密钥\获取系统OEM密钥.csproj", "{ABCD877D-474E-4AD3-A87F-E6B713AC548E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABCD877D-474E-4AD3-A87F-E6B713AC548E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCD877D-474E-4AD3-A87F-E6B713AC548E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCD877D-474E-4AD3-A87F-E6B713AC548E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCD877D-474E-4AD3-A87F-E6B713AC548E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36C93C3A-C272-40FF-AE66-4B13BA20E279}
+	EndGlobalSection
+EndGlobal

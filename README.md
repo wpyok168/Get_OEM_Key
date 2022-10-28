@@ -1,5 +1,7 @@
 # 获取系统OEM密钥
 
+# 获取数字密钥和安装密钥
+
 ~~~
 using System;
 using System.Collections;
@@ -19,15 +21,15 @@ namespace 密钥解密
 			//HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 			RegistryKey regkey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(@"SYSTEM\Setup\Source OS (Updated on 7/11/2022 08:44:42)");
 			byte[] DigitalProductId = regkey.GetValue("DigitalProductId") as byte[];
-			byte[] DigitalProductId4 = regkey.GetValue("DigitalProductId4") as byte[];
+			//byte[] DigitalProductId4 = regkey.GetValue("DigitalProductId4") as byte[];
 			string numkey = DecodeProductKey(DigitalProductId);
-			string unknownkey = DecodeProductKey(DigitalProductId4);
+			//string unknownkey = DecodeProductKey(DigitalProductId4);
 
 			RegistryKey regkey1 = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");
 			byte[] DigitalProductId1 = regkey1.GetValue("DigitalProductId") as byte[];
-			byte[] DigitalProductId41 = regkey.GetValue("DigitalProductId4") as byte[];
+			//byte[] DigitalProductId41 = regkey.GetValue("DigitalProductId4") as byte[];
 			string installkey1 = DecodeProductKey(DigitalProductId1);
-			string unknownkey1 = DecodeProductKey(DigitalProductId41);
+			//string unknownkey1 = DecodeProductKey(DigitalProductId41);
 		}
 		public static string DecodeProductKey(byte[] digitalProductId)
 		{
